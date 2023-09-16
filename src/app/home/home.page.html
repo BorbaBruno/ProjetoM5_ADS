@@ -1,20 +1,45 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        APP - SUPORTE
+      </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card>
+    <ion-icon name="key-outline"></ion-icon>
+    <ion-card-content>
+      <ion-item>
+        <ion-input type="text" placeholder="Usuário"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Senha"></ion-input>
+      </ion-item>
+      <div class="buttons">
+        <ion-button expand="full" color="medium" (click)="entrar()">ENTRAR</ion-button>
+        <ion-button expand="full" color="medium" (click)="recuperar()">RECUPERAÇÃO DE SENHA</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="section">
+    <div class="style-icons">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    </div>
+  </ion-card>
 </ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button color="medium">
+         AJUDA
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button color="medium">
+         CONTATO
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-footer>

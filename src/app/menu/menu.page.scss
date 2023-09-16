@@ -19,9 +19,7 @@ ion-content {
 ion-icon {
   width: 35px;
   height: 35px;
-  margin: 0 auto;
-  display: flex;
-  margin-top: 20px;
+  color: white;
 }
 
 ion-button {
@@ -45,5 +43,4 @@ ion-footer {
 
 .style_icons {
   display: flex;
-  flex-direction: row;
 }
